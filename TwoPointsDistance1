@@ -1,8 +1,11 @@
-public class TwoPointsDistance  {
-    int x1, y1; // координаты первой точки
-    int x2, y2; // координаты второй точки
+public class TwoPointsDistance {
+    public static void main(String[] args) {
+        double x1, y1;
+        double x2, y2;
+    }
 
-    public double count(double l) {
+    public double count() {
         double l = Math.sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
+        return l;
     }
 }
