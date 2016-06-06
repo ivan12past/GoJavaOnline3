@@ -19,12 +19,11 @@ public class TwoPointsDistance {
 
     public static void main(String[] args){
         TwoPointsDistance twopointsdistance = new TwoPointsDistance();
-        twopointsdistance.x1 = 1;
-        twopointsdistance.y1 = 1;
-        twopointsdistance.x2 = 1;
-        twopointsdistance.y2 = 10;
+        twopointsdistance.setStartPoint( 1 , 1);
+        twopointsdistance.setEndPoint(1 , 10);
 
         System.out.println(twopointsdistance.count());
     }
 }
+
 
