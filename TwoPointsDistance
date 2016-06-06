@@ -1,4 +1,8 @@
 public class TwoPointsDistance {
+    double x1, y1;
+    double x2, y2;
+
+
     public void setStartPoint ( double x, double y){
         x1 = x;
         y1 = y;
