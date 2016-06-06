@@ -1,6 +1,6 @@
 public class TwoPointsDistance {
-        double x1 = 1, y1 = 1;
-        double x2 = 1, y2 = 10;
+        double x1, y1;
+        double x2, y2;
 
     public double count() {
         double l = Math.sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
@@ -9,6 +9,10 @@ public class TwoPointsDistance {
 
     public static void main(String[] args){
         TwoPointsDistance twopointsdistance = new TwoPointsDistance();
+        twopointsdistance.x1 = 1;
+        twopointsdistance.y1 = 1;
+        twopointsdistance.x2 = 1;
+        twopointsdistance.y2 = 10;
         System.out.println(twopointsdistance.count());
     }
 }
