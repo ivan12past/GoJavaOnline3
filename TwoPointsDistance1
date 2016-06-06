@@ -1,4 +1,7 @@
-public class TwoPointsDistance1 {
+public static void main(String[] args){
+        TwoPointsDistance twopointsdistance = new TwoPointsDistance();
+        }
+public class TwoPointsDistance {
         double x1, y1;
         double x2, y2;
 
@@ -7,4 +10,5 @@ public class TwoPointsDistance1 {
         return l;
     }
 }
+
 
