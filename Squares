@@ -1,16 +1,14 @@
+package javaonline3.hw4;
+
 public class Squares {
-    static final double PI = 3.14;
-    public double rectSquare( double firstSide , double secondSide){
-        double S1 = firstSide * secondSide;
-        return S1;
+    public double counyRectangleSquare( double firstSide , double secondSide){
+        return    firstSide * secondSide;
     }
-    public double circSquare(double radiusCirc){
-        double S2 = PI * radiusCirc * radiusCirc;
-        return S2;
+    public double countCircleSquare(double radius){
+        return   Math.PI * radius * radius;
     }
-    public double triSquare(double heightTri , double sideTri){
-        double S3 = (heightTri * sideTri)/2;
-        return S3;
+    public double countTriangleSwuare(double height, double side){
+        return   (height * side)/2;
     }
 
 }
