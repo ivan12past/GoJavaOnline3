@@ -1,23 +1,30 @@
+package javaonline3.hw4;
 
 public class TwoPointsDistance {
- public double setStartPoint(double x1, double y1){
-     final Scanner scanner1 = new Scanner(System.in);
-     System.out.println("Please, enter x1");
-     double x1 = scanner1.nextDouble;
-     final Scanner scanner2 = new Scanner(System.in);
-     System.out.println("Please, enter y1");
-     double y1 = scanner2.nextDouble;
- }
-  public double setStsrtPoint(double x2, double y2){
-      final Scanner scanner1 = new Scaner(System.in);
-      System.out.println("Please, enter x2");
-      double x2 = scanner1.nextDouble;
-      final Scanner scanner2 = new Scanner(System.in);
-      System.out.println("Please, enter y2");
-      double y2 = scanner2.nextDouble;
-  }
-   public double count (double l){
-       double l = Math.sqrt((x2 - x1)*(x2 - x1) + (y2 - y1)*(y2 - y1));
-       System.out.println("Distance between points: " + l);
-   }
+    double x1, y1;
+    double x2, y2;
+
+
+    public void setStartPoint ( double x, double y){
+        x1 = x;
+        y1 = y;
+    }
+    public void setEndPoint ( double x, double y){
+        x2 = x;
+        y2 = y;
+    }
+
+    public double count() {
+        double l = Math.sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
+        return l;
+    }
+
+    public static void main(String[] args){
+        TwoPointsDistance twopointsdistance = new TwoPointsDistance();
+        twopointsdistance.setStartPoint( 1 , 1);
+        twopointsdistance.setEndPoint(1 , 10);
+
+        System.out.println(twopointsdistance.count());
+    }
 }
+
