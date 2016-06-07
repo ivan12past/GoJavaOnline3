@@ -1,0 +1,21 @@
+public class Squares {
+    static final double PI = 3.14;
+    double rectSquare( double firstSide , double secondSide){
+        a = firstSide;
+        b = secondSide;
+        double S1 = a * b;
+        return S1;
+    }
+    double circSquare(double radiusCirc){
+        a = radiusCirc;
+        double S2 = PI * a * a;
+        return S2;
+    }
+    double triSquare(double heightTri , double sideTri){
+        a = heightTri;
+        b = sideTri;
+        double S3 = (a * b)/2;
+        return S3;
+    }
+
+}
