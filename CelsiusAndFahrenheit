@@ -1,0 +1,10 @@
+package javaonline3.hw4;
+
+public class CelsiusAndFahrenheit {
+    public double celsiusToFahrenheit(double degreeCelsius) {
+        return  (1.8 * degreeCelsius) + 32;
+    }
+    public double fahrenheitToCelsius(double degreeFahrenheit) {
+        return  (degreeFahrenheit - 32) / 1.8;
+    }
+}
